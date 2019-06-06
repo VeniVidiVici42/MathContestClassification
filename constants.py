@@ -9,5 +9,5 @@ aops_contests_url = "https://artofproblemsolving.com/community/c13_contests"
 aops_regional_contests_url = "https://artofproblemsolving.com/community/c16_national_and_regional_contests"
 contest_discussion_url = "https://artofproblemsolving.com/community/c40244_contest_collections_discussion"
 
-max_problems_per_file = 10
+max_problems_per_file = 1000
 problem_file_spacing = '\n--------------------------------\n'
