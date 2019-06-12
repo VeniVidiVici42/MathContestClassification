@@ -42,4 +42,5 @@ while len(url_stack) > 0:
 				problems = []
 				file_number = file_number + 1
 
+#one last dump is necessary
 utils.dump_problems(problems, file_number)
