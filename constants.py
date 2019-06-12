@@ -29,3 +29,5 @@ stop_words = {"i", "me", "my", "myself", "we", "our", "ours", "ourselves",
 			  "other", "some", "such", "no", "nor", "not", "only", "own", "same", 
 			  "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", 
 			  "should", "now"}
+			  
+min_prob_length = 10

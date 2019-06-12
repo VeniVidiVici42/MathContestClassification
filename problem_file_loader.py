@@ -11,7 +11,7 @@ class ProblemFileLoader:
 		#Combine each problem between the problem dividers into one line
 		problem = ''
 		for line in lines:
-			if line[:3] != '---':#line != constants.problem_file_spacing:
+			if line[:4] != '----':
 				problem += line.replace('\n', ' ')
 			else:
 				problem_array.append(problem)

@@ -1,8 +1,6 @@
 import constants
 import utils
 
-from problem_file_loader import ProblemFileLoader
-
 class Problem:
 	def __init__(self):
 		pass
@@ -35,20 +33,12 @@ class Problem:
 		
 		return Problem.split_commands(new_basic_latex, commands + ' ' + new_command)
 	
-	#splits problem into words, basic latex, and latex commands
+	#splits problem into words (incuding latex commands) and pure latex
 	@staticmethod
 	def split_problem(problem):
 		problem = Problem.remove_diagrams(problem)
 		words, latex = Problem.split_latex(problem)
 		words = utils.clean_sentence(words)
 		basic_latex, commands = Problem.split_commands(latex)
-		return words, basic_latex, commands
-	
-'''	
-a = ProblemFileLoader('../Problems/problems2.txt')
-b = a.get_problem_array()[:2]
-print(b)
-for c in b:
-	print(c)
-	print(Problem.split_problem(c))
-'''
+		return words + commands, basic_latex
+		
